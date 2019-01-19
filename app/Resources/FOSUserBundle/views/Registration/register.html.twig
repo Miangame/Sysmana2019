@@ -1,0 +1,44 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+{% block fos_user_content %}
+    <form action="{{ path("fos_user_registration_register") }}" method="post">
+        <div class="row allHeight centerVertical">
+            <div class="col m8 offset-m2 l4 offset-l4 z-depth-4 p-1">
+                <div class="col s12">
+                    <div class="row centerTotal">
+                        <h3>Registro</h3>
+                    </div>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <label type="text" class="validate" for="email">Email</label>
+                    <input type="text" id="email" name="fos_user_registration_form[email]" class="validate" value="" required="required" autocomplete="off" />
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">perm_identity</i>
+                    <label type="text" class="validate" for="username">Usuario</label>
+                    <input type="text" id="username" name="fos_user_registration_form[username]" class="validate" value="" required="required" autocomplete="off" />
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">lock_outline</i>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="fos_user_registration_form[plainPassword][first]" required="required" class="validate" autocomplete="off" />
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">lock_outline</i>
+                    <label for="password">Repita Contraseña</label>
+                    <input type="password" id="password" name="fos_user_registration_form[plainPassword][second]" required="required" class="validate" autocomplete="off" />
+                </div>
+                <div class="input-field col s12">
+                    <button id="_submit"  class="btn waves-effect waves-light w-100" type="submit" name="action">Registrarme
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+                <div class="input-field col s12 center-align">
+                    <a href="{{ path('fos_user_security_login') }}">Volver al login</a>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" value="isgN11IsbNqA4p6TYn2JVPjS97tv3oFQ8kCh_c_aYIo">
+    </form>
+{% endblock %}
