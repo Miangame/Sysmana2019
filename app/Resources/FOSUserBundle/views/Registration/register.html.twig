@@ -39,6 +39,6 @@
             </div>
         </div>
 
-        <input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" value="isgN11IsbNqA4p6TYn2JVPjS97tv3oFQ8kCh_c_aYIo">
+        <input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" value="{{ csrf_token('registration') }}">
     </form>
 {% endblock %}
