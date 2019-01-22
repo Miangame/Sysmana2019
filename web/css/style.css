@@ -1,0 +1,38 @@
+.centerVertical {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.allHeight {
+    height: 100vh;
+}
+
+.brand-logo{
+    margin-left: 10px;
+}
+
+#containerPonentes{
+    padding: 10px;
+}
+
+#containerPonentes .card{
+    margin: 10px;
+}
+
+#containerPonentes .card span{
+    color: #4a138c;
+    font-weight: bold;
+}
+
+#containerPonentes .card b{
+    color: #6B1A9A;
+    font-weight: bold;
+}
+
+#containerPonentes .card .card-reveal span{
+    color: #6B1A9A;
+    font-weight: bold;
+}
