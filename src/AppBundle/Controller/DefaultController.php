@@ -18,7 +18,6 @@ class DefaultController extends Controller
     {
         $user= $this->getUser();
         //$this->get('security.context')->isGranted('IS_AUTHENTICATED_FULLY')
-        if ($user){
             /** @var PonentesHelper $ponentesHelper */
             $ponentesHelper = $this->get('ponentesHelper');
 
@@ -49,10 +48,7 @@ class DefaultController extends Controller
 
 
             return $this->render('sysmana2019/index.html.twig', array('ponentes'=> $arrayPonentes));
-        }
 
-        // replace this example code with whatever you need
-        return $this->redirect('login');
     }
 
 

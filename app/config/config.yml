@@ -71,11 +71,3 @@ swiftmailer:
 sensio_framework_extra:
    router:
         annotations: false
-
-fos_user:
-    db_driver: orm
-    firewall_name: main
-    user_class: AppBundle\Entity\User
-    from_email:
-        address: "a@a.com"
-        sender_name: "sender"
