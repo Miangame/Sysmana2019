@@ -1,77 +1,41 @@
-Symfony Standard Edition
+
+
+Taller iniciación symfony - Sysmana 2019
 ========================
+![Texto alternativo](web/images/photos/symfony.png )
 
-**WARNING**: This distribution does not support Symfony 4. See the
-[Installing & Setting up the Symfony Framework][15] page to find a replacement
-that fits you best.
+Taller de introducción a **Symfony** con buenas prácticas. Se hará un ejercicio práctico donde se pondrá en práctica la parte **teórica** del taller.
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
-
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
-
-What's inside?
+:exclamation: Requisitos :exclamation:
 --------------
 
-The Symfony Standard Edition is configured with the following defaults:
+  * **Ordenador**.
 
-  * An AppBundle you can use to start coding;
+  * **Conexión internet**.
 
-  * Twig as the only configured template engine;
+  * **IDE o editor de código preparado para PHP**, recomendable IDE PhpStorm.
 
-  * Doctrine ORM/DBAL;
+  * **Xampp o similar instalado, versión de php recomendada 7.2**, descargar xampp desde [aquí](https://www.apachefriends.org/es/download.html).
 
-  * Swiftmailer;
+  * **Composer**, puedes instalarlo desde 
+  [aquí](https://getcomposer.org/download/)
 
-  * Annotations enabled for everything.
 
-It comes pre-configured with the following bundles:
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+:boom: Demo :boom:
+--------------
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+Se realizará un **pequeño ejercicio práctico** en que se reproducirá una web parecida a la mostrada a continuación. Esta web **realizará una consulta a una base de datos**, la cuál contiene toda la información a mostrar. **Está información se visualizará filtrada por días**. De tal manera que podremos ver las **charlas de cada día y la información sobre ellas**.
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+![Texto alternativo](web/images/photos/demo.png )
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+:bust_in_silhouette: Ponentes :bust_in_silhouette:
+--------------
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+**Miguel Gavilán Merino y Jesús Mejías Leiva**
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+![Texto alternativo](web/images/photos/miguelJesus.png )
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
 
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
 
-  * [**SensioGeneratorBundle**][13] (in dev env) - Adds code generation
-    capabilities
-
-  * [**WebServerBundle**][14] (in dev env) - Adds commands for running applications
-    using the PHP built-in web server
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/3.4/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.4/doctrine.html
-[8]:  https://symfony.com/doc/3.4/templating.html
-[9]:  https://symfony.com/doc/3.4/security.html
-[10]: https://symfony.com/doc/3.4/email.html
-[11]: https://symfony.com/doc/3.4/logging.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
-[14]: https://symfony.com/doc/current/setup/built_in_web_server.html
-[15]: https://symfony.com/doc/current/setup.html
