@@ -15,7 +15,7 @@ class PonentesHelper
     {
         /** @var PonenteRepository $ponenteRepository */
         $ponenteRepository = $this->em->getRepository('AppBundle:Ponente');
-        $ponentes = $ponenteRepository->getPonentesByDay();
+        $ponentes = $ponenteRepository->getPonentes();
 
         $arrayPonentes = array();
 
