@@ -36,3 +36,7 @@
     color: #6B1A9A;
     font-weight: bold;
 }
+
+span{
+    word-wrap: break-word;
+}
