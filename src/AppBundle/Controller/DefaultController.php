@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 
+
 class DefaultController extends Controller
 {
     /**
@@ -15,36 +16,14 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        /** @var PonentesHelper $ponentesHelper */
-        $ponentesHelper = $this->get('ponentesHelper');
-
-        $ponentes = $ponentesHelper->getPonentes();
-
-        $arrayPonentes = array();
-
-        foreach ($ponentes as $index => $ponente) {
-            switch ($ponente["day"]["id"]) {
-                case 1:
-                    $arrayPonentes["lunes"][$index] = $ponente;
-                    break;
-                case 2:
-                    $arrayPonentes["martes"][$index] = $ponente;
-                    break;
-                case 3:
-                    $arrayPonentes["miercoles"][$index] = $ponente;
-                    break;
-                case 4:
-                    $arrayPonentes["jueves"][$index] = $ponente;
-                    break;
-                case 5:
-                    $arrayPonentes["viernes"][$index] = $ponente;
-                    break;
-            }
-
-        }
+            /** @var PonentesHelper $ponentesHelper */
 
 
-        return $this->render('sysmana2019/index.html.twig', array('ponentes' => $arrayPonentes));
+            $ponentesHelper = $this->get('ponentesHelper');
+
+            $ponentes = $ponentesHelper->getPonentesByDay();
+
+            return $this->render('sysmana2019/index.html.twig', array('ponentes'=> $ponentes));
 
     }
 
