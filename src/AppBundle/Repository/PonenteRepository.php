@@ -12,7 +12,7 @@ namespace AppBundle\Repository;
 class PonenteRepository extends \Doctrine\ORM\EntityRepository
 {
 
-    public function getPonentesByDay()
+    public function getPonentes()
     {
         $qb = $this->getEntityManager()->createQueryBuilder()
             ->select('p, d')
