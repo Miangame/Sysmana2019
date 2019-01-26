@@ -21,7 +21,7 @@ class DefaultController extends Controller
 
             $ponentesHelper = $this->get('ponentesHelper');
 
-            $ponentes = $ponentesHelper->getPonentesByDay();
+            $ponentes = $ponentesHelper->getPonentes();
 
             return $this->render('sysmana2019/index.html.twig', array('ponentes'=> $ponentes));
 

@@ -72,7 +72,8 @@ class Ponente
 
     /**
      * @var string
-     * @ORM\ManyToOne(targetEntity="Day", inversedBy="days")
+     * @ORM\ManyToOne(targetEntity="Day")
+     * @ORM\JoinColumn(name="day_id", referencedColumnName="id")
      */
     private $day;
 

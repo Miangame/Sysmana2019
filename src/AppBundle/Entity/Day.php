@@ -18,6 +18,7 @@ class Day
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Ponente", mappedBy="day")
      */
     private $id;
 
@@ -26,13 +27,6 @@ class Day
      * @ORM\Column(name="day", type="string", length=255)
      */
     private $day;
-
-    /**
-     * @var
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Ponente", mappedBy="day")
-     */
-    private $days;
-
 
     /**
      * Get id
